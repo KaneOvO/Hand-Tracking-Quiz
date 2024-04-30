@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hand Tracking Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hand Tracking Quiz</h1>
+    <div id="question"></div></br>
+    <video id="video" width="640" height="480" autoplay style="display: none; transform: scaleX(-1);"></video>
+    <canvas id="canvas" width="640" height="480" style="transform: scaleX(-1);"></canvas></br>
+    <div id="feedback"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
